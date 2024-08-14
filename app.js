@@ -29,6 +29,8 @@ app.get("/new", (req, res) => {
 });
 app.use(express.urlencoded({ extended: true }));
 
+//javascript objects cant be passed in url as params only strings can be passed
+// so we cant send whole message object instead just send id
 app.get("/letter/:id", (req, res) => {
   const messageId = parseInt(req.params.id, 10);
   const message = messages.find((msg) => msg.id === messageId);
