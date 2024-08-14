@@ -1,0 +1,51 @@
+* {
+  font-family: cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  gap: 10px;
+}
+img {
+  height: 42px;
+}
+.image {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  gap: 20px;
+  width: 300px;
+  border: 2px solid rgb(145, 142, 142);
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgb(223, 174, 204);
+}
+.msg {
+  height: 120px;
+  width: 300px;
+}
+input {
+  width: 200px;
+  border-radius: 20px;
+  border-color: rgb(106, 96, 96);
+  background-color: gainsboro;
+  height: 30px;
+}
+
+button {
+  width: 100px;
+  border-radius: 20px;
+  padding: 10px;
+}
+button:hover {
+  background-color: rgb(215, 215, 208);
+}

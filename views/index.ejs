@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <link rel="stylesheet" href="./styles.css" />
+    <div class="container">
+    <div id="heart"></div>
+
+    <h1>Miss You</h1>
+    <div class="gap">
+    <div class="messages">
+      <% messages.forEach((message)=>{ %>
+      <div class="box">
+        <ul>
+          <li><%= message.text %></li>
+          <li>To: <%= message.user %></li>
+          <li>Date: <%= message.added %></li>
+        </ul>
+      </div>
+      <% })%>
+    </div>
+    <a href="/new">
+      <button>New</button>
+    </a>
+  </div>
+  </body>
+</div>
+</html>

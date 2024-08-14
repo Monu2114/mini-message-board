@@ -1,0 +1,122 @@
+html,
+body {
+  height: 100vh;
+  font-family: "Dancing Script", cursive;
+  background-color: #f8e7e7;
+  color: #5d4037;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gap {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+}
+.container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #b71c1c;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.messages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 100%;
+  margin-left: 40px;
+}
+
+.box {
+  height: 200px;
+  background-color: #ffcccc;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.container {
+  margin-top: 10px;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+li:last-child {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  width: 50px;
+  height: 80px;
+  background: rgb(213, 123, 123);
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+#heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+button {
+  background-color: rgb(222, 182, 188); /* Soft pink color */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for a nice size */
+  font-family: "Cursive", sans-serif; /* Romantic font */
+  font-size: 16px; /* Slightly larger text */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+  background-color: rgb(242, 122, 135); /* Slightly darker pink on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
