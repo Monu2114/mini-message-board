@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <link rel="stylesheet" href="/styles.css" />
+
+    <div class="container">
+      <div id="heart"></div>
+      <h1>Message Details</h1>
+      <div class="box">
+        <ul>
+          <li><strong>Message:</strong> <%= message.text %></li>
+          <li><strong>To:</strong> <%= message.user %></li>
+          <li><strong>Date:</strong> <%= message.added %></li>
+        </ul>
+      </div>
+      <a href="/">
+        <button>Back</button>
+      </a>
+    </div>
+  </body>
+</html>
