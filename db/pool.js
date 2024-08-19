@@ -3,7 +3,7 @@ require("dotenv").config();
 const connectDB = async () => {
   try {
     const db =
-      process.env.NODE_env == "production"
+      process.env.NODE_ENV == "production"
         ? process.env.DB_CONNECTION
         : process.env.LOCAL_CONNECTION;
     await mongoose.connect(db, {
