@@ -1,21 +1,39 @@
-<link rel="stylesheet" href="./form.css" />
-<div class="container">
-  <h1>Write to them !!</h1>
+<html>
+  <body>
+    <link rel="stylesheet" href="/form.css" />
+    <div class="container">
+      <h1><%=action==='update' ? 'Update Message' : 'Write to them !! '%></h1>
 
-  <form method="post" action="/new">
-    <div class="box">
-      <div class="image">
-        <label for="user">To:</label>
-        <div class="gap">
-          <input type="text" name="user" />
-          <img src="./love-letter.png" alt="" />
+      <form
+        method="post"
+        action="<%= action === 'update' ? '/update/' + message.id : '/new' %>"
+      >
+        <div class="box">
+          <div class="image">
+            <label for="user">To:</label>
+            <div class="gap">
+              <input
+                type="text"
+                name="user"
+                value="<%= message ? message.user : '' %>"
+                required
+              />
+
+              <img src="/love-letter.png" alt="" />
+            </div>
+          </div>
+
+          <label for="message">Message:</label>
+          <textarea class="msg" name="message" required>
+        <%= message ? message.text : '' %>
+      </textarea
+          >
+
+          <button type="submit">
+            <%= action === 'update' ? 'Update' : 'Send' %>
+          </button>
         </div>
-      </div>
-
-      <label for="message">Message:</label>
-      <textarea class="msg" name="message"></textarea>
-
-      <button type="submit">Send</button>
+      </form>
     </div>
-  </form>
-</div>
+  </body>
+</html>

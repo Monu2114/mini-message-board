@@ -14,11 +14,20 @@
           <li>To: <%= message.user %></li>
           <li>Date: <%= message.added %></li>
         </ul>
-        <a href="/letter/<%= message.id %>">
-          <button>Open</button>
-        </a>
+        <div class="buttons">
+          <a href="/letter/<%= message._id %>">
+            <button>Open</button>
+          </a>
+          <a href="/delete/<%= message._id %>">
+            <button>Delete</button>
+          </a>
+          <a href="/update/<%= message._id %>">
+            <button>Update</button>
+          </a>
+        </div>
+       
       </div>
-      <% })%>
+      <% }) %>
     </div>
     <a href="/new">
       <button>New</button>

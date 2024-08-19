@@ -30,21 +30,19 @@ img {
   background-color: rgb(223, 174, 204);
 }
 .msg {
+  text-align: left;
   padding-top: 10px;
-  padding-left: 10px;
   height: 120px;
   border-radius: 10px;
 
   width: 300px;
-  text-align: left; /* Align text to the left */
-  vertical-align: top; /* Align text to the top */
-  resize: none;
   border-color: rgb(106, 96, 96);
   background-color: gainsboro;
 }
 
 input {
   width: 200px;
+  padding-left: 10px;
   border-radius: 20px;
   border-color: rgb(106, 96, 96);
   background-color: gainsboro;

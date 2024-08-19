@@ -37,6 +37,10 @@ h1 {
   max-width: 100%;
   margin-left: 40px;
 }
+.buttons {
+  display: flex;
+  gap: 10px;
+}
 
 .box {
   height: 200px;
@@ -119,4 +123,7 @@ button {
 button:hover {
   background-color: rgb(242, 122, 135); /* Slightly darker pink on hover */
   transform: translateY(-3px); /* Slight lift on hover */
+}
+a {
+  font-style: none;
 }
