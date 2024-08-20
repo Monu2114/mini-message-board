@@ -18,12 +18,12 @@ app.get("/", async (req, res) => {
     await queries.insertData({
       text: "I miss you",
       user: "Monu",
-      date: new Date().toDateString(),
+      added: new Date().toDateString(),
     }),
       await queries.insertData({
         text: "I am bored",
         user: "Damon",
-        date: new Date().toDateString(),
+        added: new Date().toDateString(),
       });
   }
 
