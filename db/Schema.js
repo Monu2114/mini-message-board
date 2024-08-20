@@ -3,9 +3,7 @@ const { Schema } = mongoose;
 const messageSchema = new Schema({
   text: String,
   user: String,
-  added: {
-    type: String,
-  },
+  added: String,
 });
 const Message = mongoose.model("messages", messageSchema);
 module.exports = Message;
